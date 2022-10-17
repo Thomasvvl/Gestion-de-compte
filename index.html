@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>EPCF1</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img class="logo" src="./img/logobanque.png" alt="">
+            <div class="onglets">
+                <a href="index.html">Accueil</a>
+                <a href="#compte">Gestion de compte</a>
+            </div>
+            <div class="buttons">
+                <button class="login">J'ai déja un compte</button>
+                <button class="register">S'identifier</button>
+            </div>
+        </nav>
+        <div class="ex"></div>
+        <div class="image"></div>
+        <div class="titre">
+            <h1>Bienvenue Mr...</h1>
+            <p>Sur votre gestion de compte bancaire</p>
+            <a href="#compte" class="btn">Mon compte</a>
+        </div>
+        </div>
+    </header>
+
+    <section id="compte">
+        <div class="container">
+            <div class="box">
+                <div class="profil">
+                    <div class="cercle">
+                        <img src="./img/user.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <h3>Mr...</h3>
+                        <p>Compte courant :</p>
+                        <div class="somme"> <strong>Solde : <div id="solde" style="
+                            display: contents;
+                        ">0</div>€</strong></div>
+                    </div>
+                    <div class="revenus">
+                        <div class="txt2">
+                            <h1>Revenus</h1>
+                            <h2>Ajouter opérations : <input id="valueAddMoney" type="number" step="1" value="0">
+                                <button id="addMoney">Ajouter</button>
+                            </h2>
+                        </div>
+
+                        <div id="historique"></div>
+                        <!-- 
+                        <div class="tab">
+                            <h4>5 Octobre <span>+1700 Euros</span></h4>
+                        </div>
+                        <div class="tab">
+                            <h4>4 Octobre <span>+178 Euros</span></h4>
+                        </div>
+                        <div class="tab">
+                            <h4>28 septembre <span>+20 Euros</span></h4>
+                        </div>
+                        <div class="tab">
+                            <h4>5 Septembre <span>+1700 Euros</span></h4>
+                        </div>
+                        <div class="tab">
+                            <h4>4 Septembre <span>+178 Euros</span></h4>
+                        </div> -->
+                    </div>
+                    <div class="devise">
+                        <div class="TiTre">
+                            <h2>Convertisseur Euro en Dollar</h2>
+                        </div>
+                        <input type="number" id="input-eurdollar" step="0.00001" value="1">
+                        <span>EUR</span>
+                        <span class="egal">
+                        </span>
+                        <input type="number" id="input-dollareur" step="0.00001" value="0.97" data-taux="0.97">
+                        <span>Dollar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chart"><canvas id="myChart" width="350" height="200"></canvas></div>
+            <div class="depense">
+                <div class="txt3">
+                    <h1>Dépenses</h1>
+                    <h2>Ajouter opérations : <input id="valueRemoveMoney" type="number" step="1" value="0">
+                        <button id="removeMoney">Retirer</button>
+                    </h2>
+                </div>
+                <div id="historiqueRemove"></div>
+                <div class="rect">
+                    <!-- <div class="tab1">
+                        <h4>10 Octobre <span>-450 Euros</span></h4>
+                    </div>
+                    <div class="tab1">
+                        <h4>2 Octobre <span>-78 Euros</span></h4>
+                    </div>
+                    <div class="tab1">
+                        <h4>28 septembre <span>-55 Euros</span></h4>
+                    </div>
+                    <div class="tab1">
+                        <h4>15 Septembre <span>-120 Euros</span></h4>
+                    </div>
+                    <div class="tab1">
+                        <h4>4 Septembre <span>-680 Euros</span></h4>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-bottom">
+            © 2022. All Rights Reserved. Designed & Developed By <span>ThomasVvl</span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="/js/chart.js"></script>
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>

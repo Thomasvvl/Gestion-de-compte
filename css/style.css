@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Anek+Bangla:wght@100&family=Grape+Nuts&family=Indie+Flower&family=Lobster&family=Montserrat:ital@0;1&family=Permanent+Marker&family=Quicksand&family=Raleway:ital,wght@0,400;1,400;1,700&family=Square+Peg&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-image: url(../img/fond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 30px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(#185fee, #0012db);
+  padding: 15px 0px;
+}
+
+.onglets {
+  display: flex;
+  align-items: center;
+}
+
+.onglets a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttons button {
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  margin-right: 30px;
+}
+.buttons .login {
+  width: 160px;
+  height: 40px;
+  background-color: #1156dd;
+  color: #f6f6f6;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+.buttons .register {
+  width: 160px;
+  height: 40px;
+  background-color: #211eae;
+  color: #fff;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+.image {
+  background-image: url(../img/boi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 25em;
+}
+
+.ex {
+  position: absolute;
+  background: #1156dd;
+  width: 100%;
+  height: 25em;
+  opacity: 15%;
+}
+
+.titre {
+  position: absolute;
+  font-size: 20px;
+  margin: 2em;
+  margin-top: -12em;
+  color: #fff;
+}
+
+.titre h1 {
+  height: 30px;
+}
+.titre p {
+  font-size: 25px;
+}
+
+.btn {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px #151515;
+  color: black;
+  font-weight: 300;
+  margin-top: 20px;
+  padding: 5px 30px 10px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration-line: none;
+  transition: 0.5s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+  background: linear-gradient(#185fee, #0012db);
+  transition: 0.5s ease;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 5em auto;
+}
+
+.box {
+  display: flex;
+  width: 30em;
+  height: 35em;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+.profil {
+  width: 28em;
+  height: 10em;
+  margin-top: 30px;
+  margin: 1em;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+.revenus {
+  width: 28em;
+  height: 22em;
+  margin-top: 2em;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 8px #000000;
+  overflow: overlay;
+}
+
+input {
+  font-size: 15px;
+  text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.devise {
+  width: 920px;
+  height: 90px;
+  text-align: center;
+  background-color: #f8f8f8;
+  margin-top: 25px;
+  color: #000000;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+.depense {
+  width: 28em;
+  height: 22em;
+  margin-left: -25em;
+  margin-top: 12.2em;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 8px #000000;
+  overflow: overlay;
+}
+
+#addMoney {
+  width: 20%;
+  height: 25px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(#185fee, #0012db);
+  transition: 0.5s ease;
+}
+
+#addMoney:hover {
+  background: #1cef00;
+  transition: 0.5s ease;
+}
+
+#removeMoney {
+  width: 20%;
+  height: 25px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(#185fee, #0012db);
+  transition: 0.5s ease;
+}
+
+#removeMoney:hover {
+  background: #ff291a;
+  transition: 0.5s ease;
+}
+
+.somme strong {
+  display: contents;
+}
+
+.solde {
+  width: 28em;
+  height: 8em;
+  margin-top: 3em;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+.cercle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  margin: 1em;
+}
+
+.cercle img {
+  width: 90px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.txt {
+  float: right;
+  margin-right: 8rem;
+  margin-top: -9.5em;
+  color: #000000;
+}
+
+.txt2 {
+  color: #000000;
+  font-size: 12px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.tab {
+  width: 26em;
+  height: 1.5em;
+  margin: 15px;
+  margin-top: -5px;
+  background-color: #1156dd;
+  opacity: 65%;
+}
+
+.tab h4 {
+  text-align: left;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.tab span {
+  float: right;
+  margin-right: 10px;
+  color: rgb(0, 255, 13);
+}
+
+.txt3 {
+  color: #000000;
+  font-size: 12px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.tab1 {
+  width: 26em;
+  height: 1.5em;
+  margin: 15px;
+  margin-top: -5px;
+  background-color: #1156dd;
+  opacity: 65%;
+}
+
+.tab1 h4 {
+  text-align: left;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.tab1 span {
+  float: right;
+  margin-right: 10px;
+  color: rgb(174, 40, 40);
+}
+
+.rect {
+  margin-top: 55px;
+}
+
+.Solde h1 {
+  position: absolute;
+  display: flex;
+  color: #000000;
+  margin: 110px;
+  margin-top: 40px;
+}
+
+.chart {
+  width: 30%;
+  margin-left: 40px;
+  margin-top: -50px;
+}
+
+footer {
+  background-image: url(../img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 70px 0;
+  position: relative;
+}
+
+footer .footer-bottom {
+  position: absolute;
+  background: rgb(27, 46, 63);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .footer-bottom span {
+  color: #0d00ff;
+}
+
+footer .footer-bottom {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 967px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .depense {
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+
+  .devise {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .chart {
+    width: 50%;
+    margin-top: 10em;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .onglets {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .cercle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .cercle img {
+    width: 50px;
+  }
+
+  .txt {
+    margin-top: -9em;
+    font-size: 12px;
+  }
+  .txt2 {
+    margin: 0;
+  }
+
+  .revenus {
+    width: 100%;
+    margin-top: 4em;
+  }
+
+  .tab {
+    width: 90%;
+  }
+
+  .devise,
+  .solde {
+    width: 90%;
+  }
+
+  .solde {
+    height: 60px;
+    height: 30px;
+  }
+
+  .solde h1 {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .devise {
+    display: none;
+  }
+  .txt3 {
+    margin: 10px;
+  }
+  .depense,
+  .tab1 {
+    width: 90%;
+    margin: 5px;
+  }
+}
