@@ -69,13 +69,22 @@ document.getElementById("addMoney").addEventListener("click", function () {
   let date = new Date();
   let dateCourante = date.toLocaleDateString();
 
-  document.getElementById("historique").innerHTML +=
+  historique = document.getElementById("historique").innerHTML +=
     "<div class='tab'><h4>" +
     dateCourante +
     "<span>+" +
     valueAddMoney +
     "€</span></h4></div>";
+
+  localStorage.setItem("addMoney", valueAddMoney);
+  localStorage.setItem("Money", historique);
 });
+
+function storage() {
+  historique.innerHTML = localStorage.getItem("Money");
+}
+
+storage();
 
 document.getElementById("removeMoney").addEventListener("click", function () {
   let valueRemoveMoney = document.getElementById("valueRemoveMoney").value;
@@ -84,10 +93,19 @@ document.getElementById("removeMoney").addEventListener("click", function () {
   let date = new Date();
   let dateCourante = date.toLocaleDateString();
 
-  document.getElementById("historiqueRemove").innerHTML +=
+  hist = document.getElementById("hist").innerHTML +=
     "<div class='tab1'><h4>" +
     dateCourante +
     "<span>-" +
     valueRemoveMoney +
     "€</span></h4></div>";
+
+  localStorage.setItem("removeMoney", valueRemoveMoney);
+  localStorage.setItem("save", hist);
 });
+
+function depense() {
+  hist.innerHTML = localStorage.getItem("save");
+}
+
+depense();

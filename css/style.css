@@ -46,7 +46,7 @@ nav {
   outline: none;
   margin-right: 30px;
 }
-.buttons .login {
+.buttons #login {
   width: 160px;
   height: 40px;
   background-color: #1156dd;
@@ -54,7 +54,7 @@ nav {
   box-shadow: 0px 4px 8px #000000;
 }
 
-.buttons .register {
+.buttons #register {
   width: 160px;
   height: 40px;
   background-color: #211eae;
